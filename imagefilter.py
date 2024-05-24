@@ -15,7 +15,7 @@ def get_file_name():
             else:
                 filen = sys.argv[1]
                 
-            if not filen:
+            if not filen.strip():
                 filen = "Image.png"
                  
             before = Image.open(filen)
